@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Configuration status="WARN" packages="com.fluxfederation.aib.common.raygun">
+<Configuration status="WARN">
   <Appenders>
     <Console name="Console" target="SYSTEM_OUT">
       <PatternLayout pattern="%notEmpty{mdcField=%X{mdcField} }%msg%n"/>
