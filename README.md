@@ -14,8 +14,8 @@ Note each app_with_log4j2_*/src/resources/log4j2 configuration file contains:
       <PatternLayout pattern="%notEmpty{mdcField=%X{mdcField} }%msg%n"/>
 ```
 
-The expectation is that log output when the mapped diagnostic context (MDC) does not contain the mdcField should no 
-contain the text within the `%notEmpty` instruction.
+The expectation is that when the mapped diagnostic context (MDC) does not contain the mdcField then
+the log output should not contain the text within the `%notEmpty` conversion pattern instruction.
 
 ### Steps to observe behaviour
 
